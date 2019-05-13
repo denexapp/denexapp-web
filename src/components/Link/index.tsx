@@ -9,7 +9,12 @@ interface IProps {
 }
 
 export default (props: IProps) => (
-  <a className={styles.component} href={props.url} target='_blank' rel='noopener noreferrer'>
+  <a
+    className={styles.component}
+    href={props.url}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <Panel color={props.color}>{props.children}</Panel>
   </a>
 );
