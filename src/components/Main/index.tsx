@@ -11,14 +11,16 @@ type LinkData = [string, Color, string?, string?];
 const data: Array<LinkData> = [
   ['Telegram', [0, 136, 204], 'https://t.me/denexapp'],
   ['GitHub', [36, 41, 46], 'https://github.com/denexapp'],
-  ['VK', [70, 128, 194], 'https://vk.com/denexapp'],
-  ['Twitch', [100, 65, 164], 'https://twitch.tv/denexapp'],
   ['Twitter', [29, 160, 241], 'https://twitter.com/denexapp'],
+  ['VK', [70, 128, 194], 'https://vk.com/denexapp'],
+  ['Instagram', [215, 0, 89], 'https://www.instagram.com/denexapp/'],
   [
     'YouTube',
     [255, 0, 0],
     'https://youtube.com/channel/UCqRF9DVbhtZKQIQGu-9H1fg'
   ],
+  ['Twitch', [100, 65, 164], 'https://twitch.tv/denexapp'],
+  ['Last.fm', [186, 0, 0], 'https://www.last.fm/user/iamDragon'],
   ['Battle.net', [4, 167, 242], undefined, 'denexapp#2391'],
   ['Discord', [114, 137, 218], undefined, 'denexapp#2741']
 ];
