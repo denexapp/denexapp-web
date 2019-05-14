@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import Panel, { Color } from '../Panel';
 import copy from 'clipboard-copy';
 import styles from './styles.module.sass';
+import { useHover, useFocus } from 'use-events';
 
 interface IProps {
   color: Color;
@@ -10,6 +11,8 @@ interface IProps {
 }
 
 export default (props: IProps) => {
+  const [isHovered, bindHover] = useHover();
+  const [isFocused, bindFocus] = useFocus();
   const [copied, setCopied] = useState<null | boolean>(null);
   const timer = useRef<null | number>(null);
 
@@ -36,8 +39,15 @@ export default (props: IProps) => {
   }
 
   return (
-    <button className={styles.component} onClick={handleClick}>
-      <Panel color={props.color}>{text}</Panel>
+    <button
+      className={styles.component}
+      onClick={handleClick}
+      {...bindFocus}
+      {...bindHover}
+    >
+      <Panel isFocused={isFocused} isHovered={isHovered} color={props.color}>
+        {text}
+      </Panel>
     </button>
   );
 };
