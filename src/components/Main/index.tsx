@@ -22,7 +22,7 @@ const data: Array<LinkData> = [
   ['Twitch', [100, 65, 164], 'https://twitch.tv/denexapp'],
   ['Last.fm', [186, 0, 0], 'https://www.last.fm/user/iamDragon'],
   ['Battle.net', [4, 167, 242], undefined, 'denexapp#2391'],
-  ['Discord', [114, 137, 218], undefined, 'denexapp#2741']
+  ['Discord', [114, 137, 218], undefined, 'denexapp#0001']
 ];
 
 export default () => (
