@@ -14,11 +14,7 @@ const data: Array<LinkData> = [
   ['Twitter', [29, 160, 241], 'https://twitter.com/denexapp'],
   ['VK', [70, 128, 194], 'https://vk.com/denexapp'],
   ['Instagram', [215, 0, 89], 'https://www.instagram.com/denexapp/'],
-  [
-    'YouTube',
-    [255, 0, 0],
-    'https://youtube.com/channel/UCqRF9DVbhtZKQIQGu-9H1fg'
-  ],
+  ['YouTube', [255, 0, 0], 'https://youtube.com/denexapp'],
   ['Twitch', [100, 65, 164], 'https://twitch.tv/denexapp'],
   ['Steam', [0, 0, 0], 'https://steamcommunity.com/id/denexapp'],
   ['Battle.net', [4, 167, 242], undefined, 'denexapp#2391'],
