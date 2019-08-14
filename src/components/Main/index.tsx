@@ -20,7 +20,7 @@ const data: Array<LinkData> = [
     'https://youtube.com/channel/UCqRF9DVbhtZKQIQGu-9H1fg'
   ],
   ['Twitch', [100, 65, 164], 'https://twitch.tv/denexapp'],
-  ['Last.fm', [186, 0, 0], 'https://www.last.fm/user/iamDragon'],
+  ['Steam', [0, 0, 0], 'https://steamcommunity.com/id/denexapp'],
   ['Battle.net', [4, 167, 242], undefined, 'denexapp#2391'],
   ['Discord', [114, 137, 218], undefined, 'denexapp#0001']
 ];
