@@ -8,7 +8,7 @@
     "@types/react": "^16.8.15",
     "@types/react-dom": "^16.8.4",
     "clipboard-copy": "^3.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.0",
