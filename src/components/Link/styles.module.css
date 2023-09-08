@@ -7,10 +7,12 @@
   color: #000;
   text-decoration: none;
   background: white;
-
+  
   &:focus-visible {
     outline-style: solid;
+    outline-offset: 2px;
     outline-width: 2px;
+    outline-color: #326EFF;
   }
 
   &:focus-visible,
