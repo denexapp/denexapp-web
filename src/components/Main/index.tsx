@@ -19,7 +19,7 @@ const data: Array<LinkData> = [
   ['Steam', [0, 0, 0], 'https://steamcommunity.com/id/denexapp'],
   ['Battle.net', [4, 167, 242], 'https://overwatch.blizzard.com/en-us/career/denexapp-2391'],
   ['VRChat', [11, 90, 149], 'https://vrchat.com/home/user/usr_47ef8889-194d-4834-ab0a-33a90d9fc89c'],
-  ['Reddit', [255, 86, 0], 'https://www.reddit.com/user/denexapp']
+  ['Reddit', [255, 86, 0], 'https://www.reddit.com/user/denexapp'],
   ['VK', [70, 128, 194], 'https://vk.com/denexapp'],
 ];
 
