@@ -1,8 +1,7 @@
 import styles from './styles.module.css';
-import Link from '../Link';
+import Link, { Color } from '../Link';
 import Title from '../Title';
 import Credits from '../Credits';
-import { Color } from '../Panel';
 
 type LinkData = [string, Color, string];
 
@@ -22,7 +21,7 @@ const data: Array<LinkData> = [
 ];
 
 const links = data.map(([name, color, url]) => (
-  <Link color={color} url={url}>
+  <Link url={url} backgroundColor={color}>
     {name}
   </Link>
 ));
