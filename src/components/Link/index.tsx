@@ -1,30 +1,32 @@
-import React from 'react';
-import styles from './styles.module.sass';
-import Panel, { Color } from '../Panel';
-import { useHover, useFocus } from 'use-events';
+import { CSSProperties } from 'react';
+import styles from './styles.module.css';
+
+export type Color = [number, number, number];
 
 interface IProps {
-  color: Color;
+  backgroundColor: Color;
   children: string;
   url: string;
 }
 
+interface StyleWithCustomProperties extends CSSProperties {
+  '--backgroundColor': string;
+}
+
 export default (props: IProps) => {
-  const [isHovered, bindHover] = useHover();
-  const [isFocused, bindFocus] = useFocus();
-  
+  const { children, backgroundColor, url } = props;
+
+  const style: StyleWithCustomProperties = { '--backgroundColor': `rgb(${backgroundColor.join()})` };
+
   return (
     <a
-      {...bindFocus}
-      {...bindHover}
       className={styles.component}
-      href={props.url}
+      style={style}
+      href={url}
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Panel isFocused={isFocused} isHovered={isHovered} color={props.color}>
-        {props.children}
-      </Panel>
+      {children}
     </a>
   );
 };

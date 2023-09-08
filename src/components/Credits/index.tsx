@@ -1,5 +1,4 @@
-import React from 'react';
-import styles from './styles.module.sass';
+import styles from './styles.module.css';
 
 interface IProps {
   children: string;

@@ -1,7 +1,5 @@
-import React from 'react';
-import styles from './styles.module.sass';
+import styles from './styles.module.css';
 import Link from '../Link';
-import Button from '../Button';
 import Title from '../Title';
 import Credits from '../Credits';
 import { Color } from '../Panel';
@@ -10,10 +8,10 @@ type LinkData = [string, Color, string];
 
 const data: Array<LinkData> = [
   ['Telegram', [0, 136, 204], 'https://t.me/denexapp'],
-  ['Discord', [114, 137, 218], 'https://discord.com/users/304173216828489729']
+  ['Discord', [114, 137, 218], 'https://discord.com/users/304173216828489729'],
   ['Instagram', [215, 0, 89], 'https://www.instagram.com/denexapp/'],
   ['GitHub', [36, 41, 46], 'https://github.com/denexapp'],
-  ['Ethereum', [135, 169, 239], 'https://etherscan.io/address/0x9F48c5f58903c66006A0432231b9a9ac0aE3Da61']
+  ['Ethereum', [135, 169, 239], 'https://etherscan.io/address/0x9F48c5f58903c66006A0432231b9a9ac0aE3Da61'],
   ['YouTube', [255, 0, 0], 'https://youtube.com/denexapp'],
   ['Twitch', [100, 65, 164], 'https://twitch.tv/denexapp'],
   ['Steam', [0, 0, 0], 'https://steamcommunity.com/id/denexapp'],
