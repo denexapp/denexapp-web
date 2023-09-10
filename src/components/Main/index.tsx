@@ -8,8 +8,8 @@ type LinkData = [string, Color, string];
 const data: Array<LinkData> = [
   ['Telegram', [0, 136, 204], 'https://t.me/denexapp'],
   ['Discord', [114, 137, 218], 'https://discord.com/users/304173216828489729'],
-  ['LinkedIn', [215, 0, 89], 'https://www.linkedin.com/in/denexapp'],
-  ['Resume', [215, 0, 89], 'https://denexapp.me/resume.pdf'],
+  ['LinkedIn', [10, 102, 194], 'https://www.linkedin.com/in/denexapp'],
+  ['Resume', [32, 121, 199], 'https://denexapp.me/resume.pdf'],
   ['Instagram', [215, 0, 89], 'https://www.instagram.com/denexapp'],
   ['GitHub', [36, 41, 46], 'https://github.com/denexapp'],
   ['Ethereum', [135, 169, 239], 'https://etherscan.io/address/0x9F48c5f58903c66006A0432231b9a9ac0aE3Da61'],
