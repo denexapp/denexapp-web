@@ -1,4 +1,5 @@
 import * as stylex from "@stylexjs/stylex";
+import { FC } from "react";
 
 const styles = stylex.create({
   link: (backgroundColor) => ({
@@ -30,16 +31,16 @@ const styles = stylex.create({
 
 export type Color = [number, number, number];
 
-interface IProps {
+interface LinkProps {
   backgroundColor: Color;
   children: string;
   url: string;
 }
 
-export default (props: IProps) => {
+const Link: FC<LinkProps> = (props) => {
   const { children, backgroundColor, url } = props;
 
-  const backgroundColorString = `rgb(${backgroundColor.join()})`
+  const backgroundColorString = `rgb(${backgroundColor.join()})`;
 
   return (
     <a
@@ -52,3 +53,5 @@ export default (props: IProps) => {
     </a>
   );
 };
+
+export default Link;

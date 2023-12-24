@@ -1,4 +1,5 @@
 import * as stylex from "@stylexjs/stylex";
+import { FC } from "react";
 
 const styles = stylex.create({
   title: {
@@ -9,10 +10,12 @@ const styles = stylex.create({
   },
 });
 
-interface IProps {
+interface TitleProps {
   children: string;
 }
 
-export default (props: IProps) => (
+const Title: FC<TitleProps> = (props) => (
   <h2 {...stylex.props(styles.title)}>{props.children}</h2>
 );
+
+export default Title;

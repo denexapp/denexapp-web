@@ -1,4 +1,5 @@
 import stylex from "@stylexjs/stylex";
+import { FC } from "react";
 
 const styles = stylex.create({
   link: {
@@ -21,12 +22,12 @@ const styles = stylex.create({
   },
 });
 
-interface IProps {
+interface CreditsProps {
   children: string;
   link: string;
 }
 
-export default (props: IProps) => (
+const Credits: FC<CreditsProps> = (props) => (
   <a
     {...stylex.props(styles.link)}
     href={props.link}
@@ -36,3 +37,5 @@ export default (props: IProps) => (
     {props.children}
   </a>
 );
+
+export default Credits;
