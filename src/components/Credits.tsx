@@ -6,18 +6,22 @@ const styles = stylex.create({
     fontSize: "18px",
     margin: "10px",
     textAlign: "center",
-    outline: "none",
-
     textDecoration: {
       default: "none",
       ":hover": "underline",
-      ":focus": "underline",
     },
 
     color: {
       default: "rgba(255, 255, 255, 0.7)",
       ":hover": "rgba(255, 255, 255, 1)",
-      ":focus": "rgba(255, 255, 255, 1)",
+    },
+
+    outlineOffset: "0",
+    outlineColor: "#326EFF",
+    outlineWidth: "2px",
+
+    outlineStyle: {
+      ":focus-visible": "solid",
     },
   },
 });
