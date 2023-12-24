@@ -9,7 +9,7 @@ const styles = stylex.create({
     minHeight: "100dvh",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
+    alignItems: "center",
     boxSizing: "border-box",
     padding: "16px",
   },
