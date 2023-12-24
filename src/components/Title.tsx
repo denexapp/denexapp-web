@@ -7,6 +7,7 @@ const styles = stylex.create({
     fontWeight: "normal",
     margin: "24px 0",
     fontSize: "32px",
+    color: "#fff",
   },
 });
 

@@ -1,6 +1,5 @@
 import * as stylex from "@stylexjs/stylex";
 import { FC } from "react";
-import Credits from "./Credits";
 import Link, { Color } from "./Link";
 import Title from "./Title";
 
@@ -10,6 +9,7 @@ const styles = stylex.create({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    justifyContent: "center",
     boxSizing: "border-box",
     padding: "16px",
   },
@@ -65,13 +65,8 @@ const links = data.map(([name, color, url]) => (
 
 const Main: FC = () => (
   <div {...stylex.props(styles.main)}>
-    <div {...stylex.props(styles.spacer)} />
     <Title>denexapp</Title>
     <div {...stylex.props(styles.container)}>{links}</div>
-    <div {...stylex.props(styles.spacer)} />
-    <Credits link="https://unsplash.com/photos/R4Y3JSKXfio">
-      Photo by Joel Cross on Unsplash
-    </Credits>
   </div>
 );
 
