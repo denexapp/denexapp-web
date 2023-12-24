@@ -1,7 +1,29 @@
-import styles from './styles.module.css';
-import Link, { Color } from '../Link';
-import Title from '../Title';
-import Credits from '../Credits';
+import Link, { Color } from './Link';
+import Title from './Title';
+import Credits from './Credits';
+import * as stylex from "@stylexjs/stylex";
+
+const styles = stylex.create({
+  main: {
+    minHeight: '100dvh',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    boxSizing: 'border-box',
+    padding: '16px'
+  },
+  container: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    margin: '0 auto',
+    maxWidth: '500px',
+    gap: '16px'
+  },
+  spacer: {
+    flexGrow: '1'
+  }
+})
 
 type LinkData = [string, Color, string];
 
@@ -29,13 +51,13 @@ const links = data.map(([name, color, url]) => (
 ));
 
 export default () => (
-  <div className={styles.component}>
-    <div className={styles.spacer} />
+  <div {...stylex.props(styles.main)}>
+    <div {...stylex.props(styles.spacer)} />
     <Title>denexapp</Title>
-    <div className={styles.container}>
+    <div {...stylex.props(styles.container)} >
       {links}
     </div>
-    <div className={styles.spacer} />
+    <div {...stylex.props(styles.spacer)} />
     <Credits link="https://unsplash.com/photos/R4Y3JSKXfio">
       Photo by Joel Cross on Unsplash
     </Credits>
