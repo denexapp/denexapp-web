@@ -38,7 +38,7 @@ const data: Array<LinkData> = [
   [
     "Ethereum",
     [135, 169, 239],
-    "https://etherscan.io/address/0x9F48c5f58903c66006A0432231b9a9ac0aE3Da61",
+    "https://etherscan.io/address/0x63185aDf94e66B793Be9FFD552F99a6AD2699B31",
   ],
   ["YouTube", [255, 0, 0], "https://youtube.com/denexapp"],
   ["Twitch", [100, 65, 164], "https://twitch.tv/denexapp"],
